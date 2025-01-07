@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-MediumItalic.eot");
+	src: local("Bagoss Extended TRIAL Medium Italic"),
+		local("BagossExtendedTRIAL-MediumItalic"),
+		url("./assets/font/BagossExtendedTRIAL-MediumItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-MediumItalic.woff2")
+			format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-MediumItalic.woff")
+			format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-MediumItalic.ttf")
+			format("truetype");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-LightItalic.eot");
+	src: local("Bagoss Extended TRIAL Light Italic"),
+		local("BagossExtendedTRIAL-LightItalic"),
+		url("./assets/font/BagossExtendedTRIAL-LightItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-LightItalic.woff2")
+			format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-LightItalic.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-LightItalic.ttf")
+			format("truetype");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-Light.eot");
+	src: local("Bagoss Extended TRIAL Light"),
+		local("BagossExtendedTRIAL-Light"),
+		url("./assets/font/BagossExtendedTRIAL-Light.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-Light.woff2") format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-Light.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-Medium.eot");
+	src: local("Bagoss Extended TRIAL Medium"),
+		local("BagossExtendedTRIAL-Medium"),
+		url("./assets/font/BagossExtendedTRIAL-Medium.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-Medium.woff2") format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-Medium.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-Bold.eot");
+	src: local("Bagoss Extended TRIAL Bold"), local("BagossExtendedTRIAL-Bold"),
+		url("./assets/font/BagossExtendedTRIAL-Bold.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-Bold.woff2") format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-Bold.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-BoldItalic.eot");
+	src: local("Bagoss Extended TRIAL Bold Italic"),
+		local("BagossExtendedTRIAL-BoldItalic"),
+		url("./assets/font/BagossExtendedTRIAL-BoldItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-BoldItalic.woff2")
+			format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-BoldItalic.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-BoldItalic.ttf")
+			format("truetype");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("BagossExtendedTRIAL-Regular.eot");
+	src: local("Bagoss Extended TRIAL Regular"),
+		local("BagossExtendedTRIAL-Regular"),
+		url("./assets/font/BagossExtendedTRIAL-Regular.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-Regular.woff2") format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-Regular.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-SemiBold.eot");
+	src: local("Bagoss Extended TRIAL SemiBold"),
+		local("BagossExtendedTRIAL-SemiBold"),
+		url("./assets/font/BagossExtendedTRIAL-SemiBold.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-SemiBold.woff2") format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-SemiBold.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-RegularItalic.eot");
+	src: local("Bagoss Extended TRIAL Regular Italic"),
+		local("BagossExtendedTRIAL-RegularItalic"),
+		url("./assets/font/BagossExtendedTRIAL-RegularItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-RegularItalic.woff2")
+			format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-RegularItalic.woff")
+			format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-RegularItalic.ttf")
+			format("truetype");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-Thin.eot");
+	src: local("Bagoss Extended TRIAL Thin"), local("BagossExtendedTRIAL-Thin"),
+		url("./assets/font/BagossExtendedTRIAL-Thin.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-Thin.woff2") format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-Thin.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-Thin.ttf") format("truetype");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-SemiBoldItalic.eot");
+	src: local("Bagoss Extended TRIAL SemiBold Italic"),
+		local("BagossExtendedTRIAL-SemiBoldItalic"),
+		url("./assets/font/BagossExtendedTRIAL-SemiBoldItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-SemiBoldItalic.woff2")
+			format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-SemiBoldItalic.woff")
+			format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-SemiBoldItalic.ttf")
+			format("truetype");
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bagoss Extended TRIAL";
+	src: url("./assets/font/BagossExtendedTRIAL-ThinItalic.eot");
+	src: local("Bagoss Extended TRIAL Thin Italic"),
+		local("BagossExtendedTRIAL-ThinItalic"),
+		url("./assets/font/BagossExtendedTRIAL-ThinItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("./assets/font/BagossExtendedTRIAL-ThinItalic.woff2")
+			format("woff2"),
+		url("./assets/font/BagossExtendedTRIAL-ThinItalic.woff") format("woff"),
+		url("./assets/font/BagossExtendedTRIAL-ThinItalic.ttf")
+			format("truetype");
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+body {
+	font-family: "BagossExtended", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--selected {
+	background-color: #f478ba !important;
+	color: #fff !important;
+	border-radius: 50% !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+	background-color: transparent !important;
+}
+
+.react-datepicker {
+	border: none !important;
+	width: 100% !important;
+}
+
+.react-datepicker__month-container {
+	width: 100% !important;
+}
+
+.react-datepicker__day-names {
+	display: flex !important;
+	justify-content: space-between !important;
+}
+
+.react-datepicker__week {
+	display: flex !important;
+	justify-content: space-between !important;
+}
