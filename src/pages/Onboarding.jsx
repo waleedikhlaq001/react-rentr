@@ -6,6 +6,11 @@ import ConfirmDetailsForm from "../components/Forms/Onboarding/ConfirmDetailsFor
 import AddressForm from "../components/Forms/Onboarding/AddressForm";
 import RentAmountFrom from "../components/Forms/Onboarding/RentAmountForm";
 import RentPaymentDate from "../components/Forms/Onboarding/RentPaymentDate";
+import AddDebitCardForm from "../components/Forms/Onboarding/AddDebitCardForm";
+import EligibilityCheck from "../components/Forms/Onboarding/EligibilityCheck";
+import ReviewDetails from "../components/Forms/Onboarding/ReviewDetails";
+import Success from "../components/Forms/Onboarding/Success";
+import Error from "../components/Forms/Onboarding/Error";
 
 function Onboarding() {
 	const [mobileNumber, setMobileNumber] = useState(""); // Store mobile number
@@ -62,58 +67,120 @@ function Onboarding() {
 	};
 
 	const handleDateSubmit = (selectedDate) => {
-		alert(`You selected: ${selectedDate}`);
+		setStep(7);
+	};
+
+	const handleDebitCard = (selectedDate) => {
+		setStep(8);
+	};
+
+	const handleEligibilityCheck = () => {
+		setStep(9);
+	};
+
+	const handleSubmitDetails = () => {
+		setStep(10);
+	};
+
+	const handleSuccess = () => {
+		setStep(11);
 	};
 
 	return (
 		<div className="bg-[#fafafa] min-h-screen font-bagoss">
 			<OnboardingNav />
-			{step === 1 && (
-				<MobileNumberForm
-					mobileNumber={mobileNumber}
-					onSubmit={handleMobileNumberSubmit}
-				/>
-			)}
-			{step === 2 && (
-				<OTPForm
-					otp={otp}
-					mobileNumber={mobileNumber}
-					onSubmit={handleOtpSubmit}
-					onBack={() => setStep(1)} // Allow going back to edit the mobile number
-				/>
-			)}
-			{/* // Add a new step for ConfirmDetailsForm */}
-			{step === 3 && (
-				<ConfirmDetailsForm
-					details={userDetails}
-					onSubmit={handleUserDetailsSubmit}
-					onBack={() => setStep(2)} // Navigate back to OTP form
-				/>
-			)}
+			<div className="overflow-y-auto">
+				{step === 1 && (
+					<MobileNumberForm
+						mobileNumber={mobileNumber}
+						onSubmit={handleMobileNumberSubmit}
+					/>
+				)}
+				{step === 2 && (
+					<OTPForm
+						otp={otp}
+						mobileNumber={mobileNumber}
+						onSubmit={handleOtpSubmit}
+						onBack={() => setStep(1)} // Allow going back to edit the mobile number
+					/>
+				)}
+				{/* // Add a new step for ConfirmDetailsForm */}
+				{step === 3 && (
+					<ConfirmDetailsForm
+						details={userDetails}
+						onSubmit={handleUserDetailsSubmit}
+						onBack={() => setStep(2)} // Navigate back to OTP form
+					/>
+				)}
 
-			{/* // Add a new step for Address */}
-			{step === 4 && (
-				<AddressForm
-					onSubmit={handleAddress}
-					onBack={() => setStep(3)} // Navigate back to OTP form
-				/>
-			)}
+				{/* // Add a new step for Address */}
+				{step === 4 && (
+					<AddressForm
+						onSubmit={handleAddress}
+						onBack={() => setStep(3)} // Navigate back to OTP form
+					/>
+				)}
 
-			{/* // Add a new step for Rent Amount */}
-			{step === 5 && (
-				<RentAmountFrom
-					onSubmit={handleRentAmount}
-					onBack={() => setStep(4)} // Navigate back to OTP form
-				/>
-			)}
+				{/* // Add a new step for Rent Amount */}
+				{step === 5 && (
+					<RentAmountFrom
+						onSubmit={handleRentAmount}
+						onBack={() => setStep(4)} // Navigate back to OTP form
+					/>
+				)}
 
-			{/* // Add a new step for Rent Date */}
-			{step === 6 && (
-				<RentPaymentDate
-					onSubmit={handleDateSubmit}
-					onBack={() => setStep(5)} // Navigate back to OTP form
-				/>
-			)}
+				{/* // Add a new step for Rent Date */}
+				{step === 6 && (
+					<RentPaymentDate
+						onSubmit={handleDateSubmit}
+						onBack={() => setStep(5)} // Navigate back to OTP form
+					/>
+				)}
+
+				{/* // Add a new step for Debit Card */}
+				{step === 7 && (
+					<AddDebitCardForm
+						onSubmit={handleDebitCard}
+						onBack={() => setStep(6)} // Navigate back to OTP form
+					/>
+				)}
+
+				{/* // Add a new step for Eligibility Check */}
+				{step === 8 && (
+					<EligibilityCheck
+						onSubmit={handleEligibilityCheck}
+						onBack={() => setStep(7)} // Navigate back to OTP form
+					/>
+				)}
+
+				{/* // Add a new step for Reivew Details */}
+				{step === 9 && (
+					<ReviewDetails
+						onSubmit={handleSubmitDetails}
+						address={address}
+						amount={amount}
+						onBack={() => setStep(7)} // Navigate back to OTP form
+					/>
+				)}
+
+				{/* // Add a new step for Success */}
+				{step === 10 && (
+					<Success
+						onSubmit={handleSuccess}
+						onBack={() => setStep(7)} // Navigate back to OTP form
+					/>
+				)}
+
+				{/* // Add a new step for Error */}
+				{step === 11 && (
+					<Error
+						onSubmit={handleEligibilityCheck}
+						address={address}
+						amount={amount}
+						onBack={() => setStep(7)} // Navigate back to OTP form
+					/>
+				)}
+			</div>
 		</div>
 	);
 }

@@ -1,11 +1,13 @@
 import React from "react";
+import Logo from "../../assets/images/Logo.svg";
 
 function OnboardingNav() {
 	return (
 		<>
-			<div className="flex justify-between py-3 relative items-center px-12 bg-white border-b shadow">
+			<div className="flex justify-between py-3 relative items-center md:px-12 px-3 bg-white border-b shadow">
 				<div className="">
-					<h1 className="text-4xl font-bold font-bagoss">Rentr</h1>
+					{/* <h1 className="text-4xl font-bold font-bagoss">Rentr</h1> */}
+					<img src={Logo} alt="" />
 				</div>
 				<div>
 					<p className="text-[#0A0A0C]">7 questions left</p>

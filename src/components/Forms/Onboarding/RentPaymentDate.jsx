@@ -15,8 +15,8 @@ function RentPaymentDate({ onSubmit }) {
 	};
 
 	return (
-		<div className="flex justify-center mt-[3rem] min-h-screen bg-[#fafafa]">
-			<div className="max-w-md w-full p-8">
+		<div className="flex justify-center mt-4 bg-[#fafafa]">
+			<div className="max-w-md w-full p-8 ">
 				<h2 className="text-2xl font-semibold mb-2">
 					What date do you pay rent?
 				</h2>
@@ -24,7 +24,7 @@ function RentPaymentDate({ onSubmit }) {
 					Lorem ipsum dolor sit amet.
 				</p>
 
-				<div className="bg-white border rounded-lg shadow-md">
+				<div className="bg-white border rounded-lg shadow-md mb-4">
 					<div className="w-full">
 						<DatePicker
 							selected={selectedDate}
@@ -36,20 +36,22 @@ function RentPaymentDate({ onSubmit }) {
 					</div>
 				</div>
 
-				{/* Next Button */}
-				<form onSubmit={handleSubmit} className="mt-6">
-					<button
-						type="submit"
-						disabled={!selectedDate}
-						className={`w-full py-3 rounded-lg ${
-							selectedDate
-								? "bg-primary text-white "
-								: "bg-secondary text-white cursor-not-allowed"
-						}`}
-					>
-						Next
-					</button>
-				</form>
+				{/* Fixed Button at the Bottom */}
+				<div className="fixed bottom-0 left-0 right-0 px-4 py-4 w-full md:max-w-md bg-white shadow-lg md:static md:px-0 md:py-0 md:shadow-none">
+					<form onSubmit={handleSubmit} className="">
+						<button
+							type="submit"
+							disabled={!selectedDate}
+							className={`w-full py-3 rounded-lg ${
+								selectedDate
+									? "bg-primary text-white "
+									: "bg-secondary text-white cursor-not-allowed"
+							}`}
+						>
+							Next
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	);
