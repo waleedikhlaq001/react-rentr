@@ -4,6 +4,9 @@ import WelcomeSecton from "../components/Dashboard/WelcomeSecton";
 import WalletSection from "../components/Dashboard/WalletSection";
 import CreditScoreImproveSection from "../components/Dashboard/CreditScoreImproveSection";
 import DiscoverMoreSection from "../components/Dashboard/DiscoverMoreSection";
+import MonthScheduleSection from "../components/Dashboard/MonthScheduleSection";
+import PaymentBreakdown from "../components/Dashboard/PaymentBreakDown";
+import NeedHelp from "../components/Dashboard/NeedHelp";
 
 function Dashboard() {
 	return (
@@ -14,12 +17,16 @@ function Dashboard() {
 			<div className="flex md:flex-row flex-col gap-x-4 my-10">
 				<div className="basis-3/4">
 					<WalletSection />
+					<MonthScheduleSection />
 				</div>
-				<div className="basis-1/4 border-2 border-rose-600"></div>
+				<div className="basis-1/4">
+					<PaymentBreakdown />
+				</div>
 			</div>
 
 			<CreditScoreImproveSection />
 			<DiscoverMoreSection />
+			<NeedHelp />
 		</div>
 	);
 }

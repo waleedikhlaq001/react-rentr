@@ -5,7 +5,7 @@ function WelcomeSecton() {
 		<div>
 			<div className="flex justify-between flex-wrap px-3 mt-8">
 				<div>
-					<h1 className="text-2xl font-semibold">
+					<h1 className="text-2xl text-gray-800 font-semibold">
 						Welcom back, Elaine
 					</h1>
 					<div className="flex items-center gap-2">
