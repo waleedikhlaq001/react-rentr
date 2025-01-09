@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Onboarding from "./pages/Onboarding";
+import Dashboard from "./pages/Dashboard";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 					<Route path="/sign-up" element={<Signup />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/onboarding" element={<Onboarding />} />
+					<Route path="/dashboard" element={<Dashboard />} />
 				</Routes>
 			</Router>
 		</>
