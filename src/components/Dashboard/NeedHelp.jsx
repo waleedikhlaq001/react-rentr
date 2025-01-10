@@ -91,7 +91,7 @@ function NeedHelp() {
 			{/* Modal */}
 			{isModalOpen && (
 				<div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center md:items-center items-end z-50">
-					<div className="bg-white rounded-lg shadow-lg p-6 md:w-[90%] w-full max-w-md relative">
+					<div className="bg-white rounded-lg shadow-lg p-6 md:w-[90%] md:h-auto h-[85vh] w-full max-w-md relative">
 						{/* Close Button */}
 						<button
 							onClick={toggleModal}
@@ -206,7 +206,7 @@ function NeedHelp() {
 									)}
 								</div>
 
-								<div className="bg-white border-t shadow pt-2 md:pt-0 w-full md:w-auto md:bg-transparent md:border-0">
+								<div className="md:bg-transparent bg-white border-t py-3 md:pt-0 md:relative px-4 left-0 w-full fixed bottom-0 md:w-auto md:bg-transparent md:border-0">
 									<button
 										type="submit"
 										className={`w-full py-3 rounded-xl text-base font-medium transition ${
