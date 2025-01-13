@@ -37,7 +37,7 @@ function RentPaymentDate({ onSubmit }) {
 				</div>
 
 				{/* Fixed Button at the Bottom */}
-				<div className="fixed bottom-0 left-0 right-0 px-4 py-4 w-full md:max-w-md bg-white shadow-lg md:static md:px-0 md:py-0 md:shadow-none">
+				<div className="fixed border-t md:border-t-0 bottom-0 left-0 right-0 px-4 py-4 w-full md:max-w-md md:bg-transparent bg-white shadow-lg md:static md:px-0 md:py-0 md:shadow-none">
 					<form onSubmit={handleSubmit} className="">
 						<button
 							type="submit"

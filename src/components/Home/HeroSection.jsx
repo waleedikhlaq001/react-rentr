@@ -23,7 +23,7 @@ function HeroSection() {
 							<span>Pay Rent on</span>
 							<span className="mt-2">Your Terms</span>
 						</h1>
-						<p className="font-semibold mt-6 text-center lg:text-left">
+						<p className="font-[600] mt-6 text-center lg:text-left">
 							Rentr offers innovative solutions that simplify the
 							rental <br className="hidden lg:block" />
 							process for both property managers and tenants,

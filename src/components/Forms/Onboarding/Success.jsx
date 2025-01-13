@@ -30,17 +30,9 @@ function Success({ onSubmit }) {
 					Meanwhile, head to the dashboard to explore more of what
 					Rentr can offer you.
 				</p>
-
-				{/* Button */}
-				{/* <button
-					type="button"
-					className="w-full bg-primary text-white py-3 rounded-lg font-medium text-base  transition focus:outline-none focus:ring-0 "
-				>
-					Visit dashboard
-				</button> */}
 			</div>
 
-			<div className="fixed bottom-0 left-0 right-0 px-4 py-4 w-full md:max-w-md bg-white shadow-lg md:static md:px-0 md:py-0 md:shadow-none">
+			<div className="fixed bottom-0 border-t md:border-t-0 left-0 right-0 px-4 py-4 w-full md:max-w-md md:bg-transparent bg-white shadow-lg md:static md:px-0 md:py-0 md:shadow-none">
 				<button
 					type="button"
 					className="w-full bg-primary text-white py-3 rounded-lg font-medium text-base  transition focus:outline-none focus:ring-0 "

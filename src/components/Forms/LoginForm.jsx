@@ -1,24 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/images/Logo.svg";
 
 function LoginForm() {
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const [error, setError] = useState("");
+
+	// Mock user credentials
+	const mockCredentials = {
+		email: "test@example.com",
+		password: "Password123",
+	};
+
+	const handleLogin = (e) => {
+		e.preventDefault();
+		// Check if email and password match the mock credentials
+		if (
+			email === mockCredentials.email &&
+			password === mockCredentials.password
+		) {
+			setError("");
+			alert("Login successful!"); // Replace with actual login handling
+		} else {
+			setError(
+				"Your password doesn't match what we have on file. Please try again."
+			);
+		}
+	};
+
 	return (
-		// bagoss: ['"Bagoss Extended TRIAL"', "sans-serif"],
 		<div className="min-h-screen font-bagoss flex flex-col items-center pt-[6rem] px-3 bg-[#fafafa]">
-			<h1 className="text-center text-2xl font-bold mb-6 font-bagoss">
-				Rentr
-			</h1>
+			<img src={Logo} className="mb-6" alt="" />
 			<div className="max-w-md w-full bg-white p-8 border rounded-xl shadow-md">
 				{/* Title */}
-				<h2 className=" text-2xl font-semibold mb-8">Welcom back</h2>
+				<h2 className="text-2xl font-semibold mb-8">Welcome back</h2>
 
-				{/* Email Input */}
-				<form>
+				{/* Form */}
+				<form onSubmit={handleLogin}>
 					<div className="mb-4">
 						<input
 							type="email"
 							id="email"
 							placeholder="Email address"
+							value={email}
+							onChange={(e) => setEmail(e.target.value)}
 							className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-0 focus:ring-primary focus:border-primary"
 						/>
 					</div>
@@ -27,24 +53,35 @@ function LoginForm() {
 							type="password"
 							id="password"
 							placeholder="Password"
-							className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-0 focus:ring-primary focus:border-primary"
+							value={password}
+							onChange={(e) => setPassword(e.target.value)}
+							className={`w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-0 focus:ring-primary focus:border-primary ${
+								error ? "border-red-500" : ""
+							}`}
 						/>
 					</div>
+
+					{/* Error Message */}
+					{error && (
+						<p className="text-red-500 text-sm mb-4">{error}</p>
+					)}
 
 					{/* Submit Button */}
 					<button
 						type="submit"
-						className="w-full bg-primary text-white py-2 px-4 rounded-xl hover:bg-primary transition"
+						className={`w-full bg-primary text-white py-2 px-4 rounded-xl hover:bg-primary transition ${
+							error ? "bg-secondary" : "bg-primary"
+						}`}
 					>
 						Login
 					</button>
 				</form>
 
-				{/* Login Link */}
+				{/* Sign Up Link */}
 				<div className="flex justify-center">
 					<span className="text-center border-b border-black font-semibold text-xs mt-4">
 						Don’t have an account&#63;
-						<Link to="/sign-up" className=" hover:underline ms-2">
+						<Link to="/sign-up" className="hover:underline ms-2">
 							Sign up
 						</Link>
 					</span>
