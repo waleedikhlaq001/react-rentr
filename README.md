@@ -189,3 +189,9 @@ Contributions are welcome! Please follow these steps:
 4. Create a Pull Request.
 
 ---
+
+## Screenshots
+
+### Landing Page
+
+![Landing Page](src/assets/images/infoTwo.svg "Landing Page Screenshot")
