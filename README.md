@@ -22,12 +22,16 @@ This project is developed using the following technologies:
 2. **Onboarding Screens**:
 
     - Signup and Login forms with validation.
+    - OTP on vai phone number
+    - User details form
+    - Payment processing form
     - Error handling and user feedback.
 
 3. **Dashboard**:
 
     - Payment details and account management.
-    - User-friendly modals like `PauseAccountModal` for account actions.
+    - Analytics and charts for payment tracking.
+    - User-friendly modals like `AccountModal`, `PauseAccountModal` and `CloseAccount` for account actions.
 
 4. **Responsive Design**:
     - Fully responsive for desktop, tablet, and mobile views.
@@ -50,8 +54,8 @@ Make sure you have the following installed on your system:
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
-    cd <project-folder>
+    git clone https://github.com/waleedikhlaq001/react-rentr.git
+    cd react-rentr
     ```
 
 2. Install dependencies:
@@ -72,7 +76,7 @@ Make sure you have the following installed on your system:
 
 4. Open your browser and visit:
     ```
-    http://localhost:3000
+    http://localhost:5173/
     ```
 
 ---
@@ -112,6 +116,9 @@ Make sure you have the following installed on your system:
 
 4. **Forms**
     - Signup and Login forms with client-side validation.
+    - OTP on vai phone number
+    - User details form
+    - Payment processing form
     - Error messages for invalid inputs.
 
 ---
@@ -163,8 +170,6 @@ The output will be located in the `dist/` directory. You can deploy this directo
 ## Future Enhancements
 
 1. **Integrate Backend**: Add APIs for user authentication and payment management.
-2. **Dashboard Improvements**: Add analytics and charts for payment tracking.
-3. **Enhanced Accessibility**: Improve support for screen readers and keyboard navigation.
 
 ---
 
@@ -182,11 +187,5 @@ Contributions are welcome! Please follow these steps:
     git push origin feature/new-feature
     ```
 4. Create a Pull Request.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
