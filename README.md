@@ -194,4 +194,4 @@ Contributions are welcome! Please follow these steps:
 
 ### Landing Page
 
-![Landing Page](src/assets/images/infoTwo.svg "Landing Page Screenshot")
+![Landing Page](src/assets/images/screenshot/landingPage.png "Landing Page Screenshot")
