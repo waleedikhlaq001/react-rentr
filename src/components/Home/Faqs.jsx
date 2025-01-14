@@ -74,9 +74,9 @@ function FaqSection() {
 									<path
 										d="M7.25 0.75L4 4.25L0.75 0.75"
 										stroke="#8A8AA3"
-										stroke-width="1.5"
-										stroke-linecap="round"
-										stroke-linejoin="round"
+										strokeWidth="1.5"
+										strokeLinecap="round"
+										strokeLinejoin="round"
 									/>
 								</svg>
 							</span>

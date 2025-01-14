@@ -2,8 +2,14 @@ import React from "react";
 import apple from "../../assets/images/apple.svg";
 import google from "../../assets/images/google.svg";
 import cartoon from "../../assets/images/herosectionCartoon.svg";
+import { useNavigate } from "react-router-dom";
 
 function HeroSection() {
+	const navigate = useNavigate();
+	const redirectToSignup = () => {
+		navigate("/sign-up"); // Use navigate instead of router.push
+	};
+
 	return (
 		<>
 			<div className="rounded-xl bg-secondary rounded-lg mb-8 md:mt-12 mt-4 overflow-hidden">
@@ -32,7 +38,10 @@ function HeroSection() {
 							involved.
 						</p>
 						<div className="flex flex-col lg:flex-row gap-6 mt-8 items-center justify-center lg:justify-start">
-							<button className="bg-white shadow-md rounded-full py-2 px-8 font-semibold">
+							<button
+								onClick={redirectToSignup}
+								className="bg-white shadow-md rounded-full py-2 px-8 font-semibold"
+							>
 								Sign up now
 							</button>
 							<button className="font-semibold">

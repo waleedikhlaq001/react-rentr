@@ -86,7 +86,6 @@ const testimonials = [
 		location: "United Kingdom",
 		avatar: "https://via.placeholder.com/50",
 	},
-	// Add more testimonials here
 ];
 
 function TestimonialSection() {
@@ -98,6 +97,8 @@ function TestimonialSection() {
 		slidesToScroll: 1,
 		initialSlide: 0,
 		autoplay: true,
+		nextArrow: "",
+		prevArrow: "",
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -127,7 +128,9 @@ function TestimonialSection() {
 	};
 
 	return (
-		<div className="py-12">
+		<div className="py-12 overflow-hidden">
+			{" "}
+			{/* Added overflow-hidden */}
 			{/* Header */}
 			<div className="text-center mb-10">
 				<div className="flex flex-col justify-center items-center gap-2">
@@ -137,17 +140,16 @@ function TestimonialSection() {
 					</h2>
 				</div>
 			</div>
-
 			{/* Carousel */}
-			<div className=" mx-auto ">
-				<Slider {...settings}>
+			<div className="mx-auto overflow-hidden">
+				<Slider {...settings} className="w-auto">
 					{testimonials.map((testimonial) => (
 						<div
 							key={testimonial.id}
-							className=" bg-white gap-6 py-4 transition"
+							className="px-3" // Added padding for spacing
 						>
-							{/* Star Rating */}
-							<div className="shadow-md hover:shadow-lg p-6 me-3 bg-[#FAFAFA] border rounded-lg">
+							<div className="shadow-md hover:shadow-lg p-6 bg-[#FAFAFA] border rounded-lg">
+								{/* Star Rating */}
 								<div className="flex items-center mb-2">
 									{[...Array(testimonial.rating)].map(
 										(_, index) => (

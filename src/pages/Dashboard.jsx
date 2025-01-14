@@ -14,7 +14,7 @@ function Dashboard() {
 			<DashboardNav />
 			<WelcomeSecton />
 
-			<div className="flex md:flex-row flex-col gap-x-4 my-10">
+			<div className="flex md:flex-row flex-col gap-x-4 px-2 my-10">
 				<div className="basis-3/4">
 					<WalletSection />
 					<MonthScheduleSection />

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 @font-face {
 	font-family: "Bagoss Extended TRIAL";
 	src: url("./assets/font/BagossExtendedTRIAL-MediumItalic.eot");
@@ -234,3 +240,11 @@ body {
 	display: flex !important;
 	justify-content: space-between !important;
 }
+
+/* .slick-track {
+	width: 100% !important;
+} */
+
+/* .slick-slider .slick-track {
+	width: 100vw;
+} */

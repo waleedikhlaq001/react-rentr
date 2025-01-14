@@ -71,7 +71,9 @@ function SignUpForm() {
 
 	return (
 		<div className="min-h-screen flex font-bagoss flex-col items-center pt-[3rem] px-3 bg-[#fafafa]">
-			<img src={Logo} className="mb-6" alt="" />
+			<Link to="/">
+				<img src={Logo} className="mb-6" alt="" />
+			</Link>
 			<div className="max-w-md w-full bg-white p-8 border rounded-xl shadow-md">
 				{/* Title */}
 				<h2 className=" text-2xl font-semibold mb-2">

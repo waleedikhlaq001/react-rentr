@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function InformationSection() {
+	const navigate = useNavigate();
+	const redirectToSignup = () => {
+		navigate("/sign-up"); // Use navigate instead of router.push
+	};
+
 	return (
 		<div className="flex flex-col justify-center items-center text-center mb-5 pt-12 ">
 			<h1 className="text-4xl text-primary font-bold">
@@ -12,7 +18,10 @@ function InformationSection() {
 				seamless and stress-free experience for everyone involved.
 			</p>
 
-			<button className="bg-primary text-white shadow-md rounded-full py-2 px-8 font-semibold mt-5">
+			<button
+				onClick={redirectToSignup}
+				className="bg-primary text-white shadow-md rounded-full py-2 px-8 font-semibold mt-5"
+			>
 				Sign up now
 			</button>
 		</div>
