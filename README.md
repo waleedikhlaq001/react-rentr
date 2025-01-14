@@ -195,3 +195,8 @@ Contributions are welcome! Please follow these steps:
 ### Landing Page
 
 ![Landing Page](src/assets/images/screenshot/landingPage.png "Landing Page Screenshot")
+
+### Payment Page
+
+![Payment Page](src/assets/images/screenshot/payment.png "Payment Page Screenshot")
+![Payment Page](src/assets/images/screenshot/paymentScreenResponsive.png "Payment Responsive Page Screenshot")
