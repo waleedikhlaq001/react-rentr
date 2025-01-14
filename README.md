@@ -199,4 +199,9 @@ Contributions are welcome! Please follow these steps:
 ### Payment Page
 
 ![Payment Page](src/assets/images/screenshot/payment.png "Payment Page Screenshot")
-![Payment Page](src/assets/images/screenshot/paymentScreenResponsive.png "Payment Responsive Page Screenshot")
+![Payment Responsive Page](src/assets/images/screenshot/paymentScreenResponsive.png "Payment Responsive Page Screenshot")
+
+### Dashboard Page
+
+![Dashboard Page](src/assets/images/screenshot/dashboard.png "Dashboard Page Screenshot")
+![Dashboard Responsive Page](src/assets/images/screenshot/dashboardResponsive.png "Dashboard Responsive Page Screenshot")
