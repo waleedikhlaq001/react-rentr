@@ -12,6 +12,10 @@ This project is developed using the following technologies:
 
 ---
 
+## Demo Link
+
+https://rentr.netlify.app/
+
 ## Features
 
 1. **Landing Page**:
