@@ -1,7 +1,7 @@
 import React from "react";
 import Plaid from "../../assets/images/plaid.svg";
 import Cbre from "../../assets/images/cbre.svg";
-import Reapit from "../../assets/images/Reapit.svg";
+import Reapit from "../../assets/images/reapit.svg";
 
 function Brand() {
 	return (
