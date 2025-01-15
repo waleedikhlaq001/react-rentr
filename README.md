@@ -14,7 +14,7 @@ This project is developed using the following technologies:
 
 ## Demo Link
 
-https://rentr.netlify.app/
+[Visit the Live Demo](https://rentr.netlify.app/)
 
 ## Features
 
