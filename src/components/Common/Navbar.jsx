@@ -19,6 +19,11 @@ function Navbar() {
 							</NavLink>
 						</li>
 						<li>
+							<NavLink to="/dashboard" className="font-[500]">
+								Dashboard
+							</NavLink>
+						</li>
+						<li>
 							<NavLink
 								to="/login"
 								className="border border-black px-5 rounded-full py-1"

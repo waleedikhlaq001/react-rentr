@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../assets/images/Logo.svg";
 
 function LoginForm() {
-	const [email, setEmail] = useState("");
-	const [password, setPassword] = useState("");
+	const [email, setEmail] = useState("test@example.com");
+	const [password, setPassword] = useState("Password123");
 	const [error, setError] = useState("");
 
+	const navigate = useNavigate();
 	// Mock user credentials
 	const mockCredentials = {
 		email: "test@example.com",
@@ -21,7 +22,7 @@ function LoginForm() {
 			password === mockCredentials.password
 		) {
 			setError("");
-			alert("Login successful!"); // Replace with actual login handling
+			navigate("/onboarding");
 		} else {
 			setError(
 				"Your password doesn't match what we have on file. Please try again."
