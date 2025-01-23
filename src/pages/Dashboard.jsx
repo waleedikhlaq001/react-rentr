@@ -10,7 +10,7 @@ import NeedHelp from "../components/Dashboard/NeedHelp";
 
 function Dashboard() {
 	return (
-		<div className="container mx-auto font-bagoss">
+		<div className="container max-w-7xl mx-auto font-bagoss">
 			<DashboardNav />
 			<WelcomeSecton />
 
